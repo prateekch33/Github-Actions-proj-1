@@ -48,6 +48,8 @@ jobs:
           name: dist
       - name: Describe artifacts
         run: ls
+      - name: Getting Output from build job
+        run: echo "${{ needs.build.outputs.script-file }}"
       - name: Deploy application
         run: echo "Deploying..."
         
