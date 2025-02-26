@@ -66,5 +66,10 @@ jobs:
         run: echo "${{ needs.build.outputs.script-file }}"
       - name: Deploy application
         run: echo "Deploying..."
+  run-custom-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run custom action
+        uses: ./.github/actions/test-javascript-action
         
         

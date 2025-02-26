@@ -1,0 +1,5 @@
+name: 'Test Javascript Action'
+description: "Test action to learn creating action using javascript"
+runs:
+  using: 'node16'
+  main: 'main.js'
